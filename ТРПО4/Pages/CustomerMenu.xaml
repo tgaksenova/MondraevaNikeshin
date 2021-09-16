@@ -7,7 +7,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="CustomerMenu">
-    <Grid Background="#FFE0A9AF">
+    <Grid Background="#ebc3dd">
         <Grid.RowDefinitions>
             <RowDefinition Height="137*"/>
             <RowDefinition Height="228*"/>

@@ -28,7 +28,7 @@ namespace ТРПО4
         private void MainFrame_OnNavigated(object sender, NavigationEventArgs e)
         {
             if (!(e.Content is Page page)) return;
-            this.Title = $"LESSON - {page.Title}";
+            this.Title = $"Никешин_и_Мондраева - {page.Title}";
             if (page is Pages.AuthPage)
             {
                 ButtonBack.Visibility = Visibility.Hidden;

@@ -54,7 +54,7 @@ namespace ТРПО4.Pages
                     return;
                 }
 
-                MessageBox.Show("Пользователь успешно найден!");
+                MessageBox.Show("Пользователь успешно найден!\n"  +user.FIO);
                 switch (user.Role)
                 {
                     case "Заказчик":
@@ -64,6 +64,8 @@ namespace ТРПО4.Pages
                         NavigationService?.Navigate(new Menu());
                         break;
                 }
+
+
             }
         }
 
