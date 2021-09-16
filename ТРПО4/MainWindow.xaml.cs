@@ -24,5 +24,37 @@ namespace ТРПО4
         {
             InitializeComponent();
         }
+
+        private void MainFrame_OnNavigated(object sender, NavigationEventArgs e)
+        {
+            if (!(e.Content is Page page)) return;
+            this.Title = $"LESSON - {page.Title}";
+            if (page is Pages.AuthPage)
+            {
+                ButtonBack.Visibility = Visibility.Hidden;
+            }
+            else
+            {
+                ButtonBack.Visibility = Visibility.Visible;
+            }
+            if (page is Pages.Calculator)
+            {
+                ButtonCalc.Visibility = Visibility.Hidden;
+            }
+            else
+            {
+                ButtonCalc.Visibility = Visibility.Visible;
+            }
+        }
+
+        private void ButtonBack_OnClick(object sender, RoutedEventArgs e)
+        {
+            if (MainFrame.CanGoBack) MainFrame.GoBack();
+        }
+
+        private void КалькуляторButton_OnClick(object sender, RoutedEventArgs e)
+        {
+            MainFrame.NavigationService?.Navigate(new Pages.Calculator());
+        }
     }
 }
