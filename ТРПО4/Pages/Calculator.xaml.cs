@@ -40,38 +40,38 @@ namespace ТРПО4.Pages
         {
             // Получаем текст кнопки
             string s = (string)((Button)e.OriginalSource).Content;
-            // Добавляем его в текстовое поле
+   
             textBlock.Text += s;
             int num;
-            // Пытаемся преобразовать его в число
+ 
             bool result = Int32.TryParse(s, out num);
-            // Если текст - это число
+
             if (result == true)
             {
-                // Если операция не задана
+
                 if (operation == "")
                 {
-                    // Добавляем к левому операнду
+
                     leftop += s;
                 }
                 else
                 {
-                    // Иначе к правому операнду
+
                     rightop += s;
                 }
             }
-            // Если было введено не число
+
             else
             {
-                // Если равно, то выводим результат операции
+
                 if (s == "=")
                 {
                     Update_RightOp();
                     textBlock.Text += rightop;
                     operation = "";
                 }
-                // Очищаем поле и переменные
-                else if (s == "AC")
+
+                else if (s == "CLEAR")
                 {
                     leftop = "";
                     rightop = "";
@@ -147,11 +147,10 @@ namespace ТРПО4.Pages
                     textBlock.Text = (Int32.Parse(leftop) / (double)100).ToString();
                 }
 
-                // Получаем операцию
+
                 else
                 {
-                    // Если правый операнд уже имеется, то присваиваем его значение левому
-                    // операнду, а правый операнд очищаем
+
                     if (rightop != "")
                     {
                         Update_RightOp();
@@ -162,12 +161,12 @@ namespace ТРПО4.Pages
                 }
             }
         }
-        // Обновляем значение правого операнда
+
         private void Update_RightOp()
         {
             int num1 = Int32.Parse(leftop);
             int num2 = Int32.Parse(rightop);
-            // И выполняем операцию
+       
             switch (operation)
             {
                 case "+":

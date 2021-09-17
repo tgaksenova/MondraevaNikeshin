@@ -8,7 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
      Title="Calculator">
 
-    <Grid x:Name="LayoutRoot" Background="White" >
+    <Grid x:Name="LayoutRoot"  >
         <Grid.RowDefinitions>
             <RowDefinition />
             <RowDefinition />
@@ -26,7 +26,7 @@
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
         <TextBlock x:Name="textBlock" Grid.Column="0"
-Grid.ColumnSpan="4" />
+Grid.ColumnSpan="4" Margin="0,0,4,0" />
         <Button Grid.Column="2" Grid.Row="4" Background="#FFFFFCD6" FontWeight="Bold" FontSize="20" Height="Auto" >1</Button>
         <Button Grid.Column="3" Grid.Row="4" Background="#FFFFFCD6" FontWeight="Bold" FontSize="20" Height="Auto" >2</Button>
         <Button Grid.Column="4" Grid.Row="4" Background="#FFFFFCD6" FontWeight="Bold" FontSize="20" Height="Auto" >3</Button>
@@ -42,7 +42,7 @@ Grid.ColumnSpan="4" />
         <Button Grid.Column="5" Grid.Row="2">*</Button>
         <Button Grid.Column="5" Grid.Row="1">/</Button>
         <Button Grid.Column="5" Grid.Row="5">=</Button>
-        <Button Grid.Column="2" Grid.Row="1">AC</Button>
+        <Button Grid.Column="2" Grid.Row="1">CLEAR</Button>
         <Button Grid.Column="0" Grid.Row="5">√x</Button>
         <Button Grid.Column="1" Grid.Row="5">|x|</Button>
         <Button Grid.Column="3" Grid.Row="1">+/–</Button>
