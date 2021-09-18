@@ -55,6 +55,16 @@ namespace ТРПО4
         private void КалькуляторButton_OnClick(object sender, RoutedEventArgs e)
         {
             MainFrame.NavigationService?.Navigate(new Pages.Calculator());
+
+          
+
+            var uri = new Uri( "Dictionary.xaml", UriKind.Relative);
+
+            ResourceDictionary resourceDict = Application.LoadComponent(uri) as ResourceDictionary;
+
+            Application.Current.Resources.Clear();
+         
+            Application.Current.Resources.MergedDictionaries.Add(resourceDict);
         }
     }
 }

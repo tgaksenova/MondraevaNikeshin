@@ -57,10 +57,10 @@ namespace ТРПО4.Pages
                 MessageBox.Show("Пользователь успешно найден!\n"  +user.FIO);
                 switch (user.Role)
                 {
-                    case "Заказчик":
+                    case "Админ":
                         NavigationService?.Navigate(new Menu());
                         break;
-                    case "Директор":
+                    case "Абитуриент":
                         NavigationService?.Navigate(new Menu());
                         break;
                 }
@@ -68,6 +68,7 @@ namespace ТРПО4.Pages
 
             }
         }
+
 
         private void ButtonRegistration_OnClick(object sender, RoutedEventArgs e)
         {
