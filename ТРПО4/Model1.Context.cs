@@ -31,8 +31,7 @@ namespace ТРПО4
         public virtual DbSet<Oblast_> Oblast_ { get; set; }
         public virtual DbSet<Shkola> Shkola { get; set; }
         public virtual DbSet<Special_nost_> Special_nost_ { get; set; }
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
-        public virtual DbSet<User> User { get; set; }
         public virtual DbSet<Ylitsa> Ylitsa { get; set; }
+        public virtual DbSet<User> User { get; set; }
     }
 }

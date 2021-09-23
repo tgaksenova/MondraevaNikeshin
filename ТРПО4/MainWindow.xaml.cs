@@ -74,6 +74,8 @@ namespace ТРПО4
 
         static void Export()
         {
+
+            SaveFileDialog ofd = new SaveFileDialog();
             string path = "export.txt";
             StreamWriter sw = new StreamWriter(path);
 
