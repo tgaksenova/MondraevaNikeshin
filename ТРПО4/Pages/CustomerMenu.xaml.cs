@@ -26,7 +26,7 @@ namespace ТРПО4.Pages
         }
         private void Переход_1_OnClick(object sender, RoutedEventArgs e)
         {
-            NavigationService?.Navigate(new Page2());
+            NavigationService?.Navigate(new abiturient());
         }
 
         private void Переход_2_OnClick(object sender, RoutedEventArgs e)
@@ -38,5 +38,7 @@ namespace ТРПО4.Pages
         {
             NavigationService?.Navigate(new Menu());
         }
+
+      
     }
 }

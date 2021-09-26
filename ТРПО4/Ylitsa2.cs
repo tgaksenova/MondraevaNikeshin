@@ -12,18 +12,20 @@ namespace ТРПО4
     using System;
     using System.Collections.Generic;
     
-    public partial class Oblast_
+    public partial class Ylitsa2
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Oblast_()
+        public Ylitsa2()
         {
-            this.Nas_pynkt = new HashSet<Nas_pynkt>();
+            this.Abiturient = new HashSet<Abiturient>();
         }
     
         public int ID { get; set; }
         public string Naimenovanie { get; set; }
+        public Nullable<int> ID_Nas_pynkt2 { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Nas_pynkt> Nas_pynkt { get; set; }
+        public virtual ICollection<Abiturient> Abiturient { get; set; }
+        public virtual Nas_pynkt2 Nas_pynkt2 { get; set; }
     }
 }

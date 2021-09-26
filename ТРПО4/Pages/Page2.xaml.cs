@@ -41,12 +41,7 @@ namespace ТРПО4.Pages
                     {
                         if (textBoxFIO.Text.Length > 0)
                         {
-                            string[] dataLogin = login.Text.Split('@');
-                            if (dataLogin.Length == 2)
-                            {
-                                string[] data2Login = dataLogin[1].Split('.');
-                                if (data2Login.Length == 2)
-                                {
+                           
                                     if (password.Password.Length >= 6)
                                     {
                                         bool en = true;
@@ -57,13 +52,11 @@ namespace ТРПО4.Pages
                                         {
                                             if (password.Password[i] >= 'А' && password.Password[i] <= 'Я') en = false;
                                             if (password.Password[i] >= '0' && password.Password[i] <= '9') number = true;
-                                            if (password.Password[i] == '_' || password.Password[i] == '-' || password.Password[i] == '!') symbol = true;
+                                           
                                         }
                                         if (!en)
                                             MessageBox.Show(" В пароле доступна только английская раскладка");
-                                        else if (!symbol)
-                                            MessageBox.Show("Добавьте один из следующих символов: _ - ! в пароль");
-                                        else if (!number)
+                                    
                                             MessageBox.Show("Добавьте хотя бы одну цифру в пароль");
                                         if (en && symbol && number)
                                         {
@@ -85,10 +78,7 @@ namespace ТРПО4.Pages
                                         }
                                     }
                                     else MessageBox.Show("Пароль слишком короткий, минимум 6 символов");
-                                }
-                                else MessageBox.Show("Укажите логин в форме x@x.x");
-                            }
-                            else MessageBox.Show("Укажите логин в форме x@x.x");
+                         
                         }
                         else MessageBox.Show("Введите ФИО");
                     }

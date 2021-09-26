@@ -58,9 +58,9 @@ namespace ТРПО4.Pages
                 switch (user.Role)
                 {
                     case "Админ":
-                        NavigationService?.Navigate(new Menu());
+                        NavigationService?.Navigate(new CustomerMenu());
                         break;
-                    case "Абитуриент":
+                    case "Член комиссии":
                         NavigationService?.Navigate(new Menu());
                         break;
                 }
@@ -73,6 +73,21 @@ namespace ТРПО4.Pages
         private void ButtonRegistration_OnClick(object sender, RoutedEventArgs e)
         {
             NavigationService?.Navigate(new Page2());
+        }
+
+        private void КалькуляторButton_OnClick(object sender, RoutedEventArgs e)
+        {
+             NavigationService?.Navigate(new Pages.Calculator());
+
+          
+
+            var uri = new Uri( "Dictionary.xaml", UriKind.Relative);
+
+            ResourceDictionary resourceDict = Application.LoadComponent(uri) as ResourceDictionary;
+
+            Application.Current.Resources.Clear();
+         
+            Application.Current.Resources.MergedDictionaries.Add(resourceDict);
         }
     }
 

@@ -17,29 +17,29 @@ namespace ТРПО4
         public int ID { get; set; }
         public string Surname { get; set; }
         public string Name { get; set; }
-        public string Otchestvo { get; set; }
-        public string gender { get; set; }
+        public string Otchistvo { get; set; }
+        public string Gender { get; set; }
         public Nullable<System.DateTime> Birthday { get; set; }
-        public string grajdanstvo { get; set; }
+        public string Grajdanstvo { get; set; }
         public Nullable<int> Dom { get; set; }
         public Nullable<int> Korpys { get; set; }
         public Nullable<int> Kvartira { get; set; }
         public string L_goti { get; set; }
-        public Nullable<int> Invalidnost_ { get; set; }
+        public Nullable<int> invalidnost_ { get; set; }
         public string Participation_in_hostilities { get; set; }
         public string Mother { get; set; }
         public string Father { get; set; }
-        public Nullable<int> Sredniy_ball { get; set; }
+        public Nullable<double> Sredniy_bal { get; set; }
         public Nullable<System.DateTime> Data_zayavleniya { get; set; }
-        public Nullable<int> Nomer_zayavleniya { get; set; }
-        public Nullable<int> ID_Nationality { get; set; }
-        public Nullable<int> ID_Shkola { get; set; }
-        public Nullable<int> ID_Specialnost_ { get; set; }
-        public Nullable<int> ID_Ylitsa { get; set; }
+        public Nullable<int> Nomer_Zayavleniya { get; set; }
+        public Nullable<int> ID_Nationality2 { get; set; }
+        public Nullable<int> ID_Shkola2 { get; set; }
+        public Nullable<int> ID_Specil_noct_2 { get; set; }
+        public Nullable<int> ID_Ylitsa2 { get; set; }
     
-        public virtual Nationality Nationality { get; set; }
-        public virtual Shkola Shkola { get; set; }
-        public virtual Special_nost_ Special_nost_ { get; set; }
-        public virtual Ylitsa Ylitsa { get; set; }
+        public virtual Nationality2 Nationality2 { get; set; }
+        public virtual Shkola2 Shkola2 { get; set; }
+        public virtual Specil_nost_2 Specil_nost_2 { get; set; }
+        public virtual Ylitsa2 Ylitsa2 { get; set; }
     }
 }

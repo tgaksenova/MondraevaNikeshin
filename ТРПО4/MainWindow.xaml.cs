@@ -42,14 +42,14 @@ namespace ТРПО4
             {
                 ButtonBack.Visibility = Visibility.Visible;
             }
-            if (page is Pages.Calculator)
-            {
-                ButtonCalc.Visibility = Visibility.Hidden;
-            }
-            else
-            {
-                ButtonCalc.Visibility = Visibility.Visible;
-            }
+            //if (page is Pages.Calculator)
+            //{
+            //    ButtonCalc.Visibility = Visibility.Hidden;
+            //}
+            //else
+            //{
+            //    ButtonCalc.Visibility = Visibility.Visible;
+            //}
         }
 
         private void ButtonBack_OnClick(object sender, RoutedEventArgs e)

@@ -12,10 +12,10 @@ namespace ТРПО4
     using System;
     using System.Collections.Generic;
     
-    public partial class Nationality
+    public partial class Nationality2
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Nationality()
+        public Nationality2()
         {
             this.Abiturient = new HashSet<Abiturient>();
         }

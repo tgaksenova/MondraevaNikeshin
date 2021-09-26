@@ -12,21 +12,19 @@ namespace ТРПО4
     using System;
     using System.Collections.Generic;
     
-    public partial class Nas_pynkt
+    public partial class Shkola2
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Nas_pynkt()
+        public Shkola2()
         {
-            this.Ylitsa = new HashSet<Ylitsa>();
+            this.Abiturient = new HashSet<Abiturient>();
         }
     
         public int ID { get; set; }
         public string Naimenovanie { get; set; }
-        public string Vid_nas_pynkta { get; set; }
-        public Nullable<int> ID_Oblast_ { get; set; }
+        public string Adres { get; set; }
     
-        public virtual Oblast_ Oblast_ { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Ylitsa> Ylitsa { get; set; }
+        public virtual ICollection<Abiturient> Abiturient { get; set; }
     }
 }

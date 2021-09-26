@@ -15,23 +15,33 @@ namespace ТРПО4
     
     public partial class Entities : DbContext
     {
+        private static Entities _context;
         public Entities()
             : base("name=Entities")
         {
         }
-    
+        public static Entities GetContext()
+        {
+            if (_context == null)
+                _context = new Entities();
+            return _context;
+        }
+
+
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();
         }
     
         public virtual DbSet<Abiturient> Abiturient { get; set; }
-        public virtual DbSet<Nas_pynkt> Nas_pynkt { get; set; }
-        public virtual DbSet<Nationality> Nationality { get; set; }
-        public virtual DbSet<Oblast_> Oblast_ { get; set; }
-        public virtual DbSet<Shkola> Shkola { get; set; }
-        public virtual DbSet<Special_nost_> Special_nost_ { get; set; }
-        public virtual DbSet<Ylitsa> Ylitsa { get; set; }
+        public virtual DbSet<Nas_pynkt2> Nas_pynkt2 { get; set; }
+        public virtual DbSet<Nationality2> Nationality2 { get; set; }
+        public virtual DbSet<Oblast_2> Oblast_2 { get; set; }
+        public virtual DbSet<Shkola2> Shkola2 { get; set; }
+        public virtual DbSet<Specil_nost_2> Specil_nost_2 { get; set; }
+        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<User> User { get; set; }
+        public virtual DbSet<Ylitsa2> Ylitsa2 { get; set; }
     }
 }
