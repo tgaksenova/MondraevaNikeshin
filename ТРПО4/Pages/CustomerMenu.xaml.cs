@@ -31,12 +31,12 @@ namespace ТРПО4.Pages
 
         private void Переход_2_OnClick(object sender, RoutedEventArgs e)
         {
-            NavigationService?.Navigate(new AuthPage());
+            NavigationService?.Navigate(new Special_nost_());
         }
 
         private void Переход_3_OnClick(object sender, RoutedEventArgs e)
         {
-            NavigationService?.Navigate(new Menu());
+            NavigationService?.Navigate(new Nas_pynkt());
         }
 
       

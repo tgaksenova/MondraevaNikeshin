@@ -1,0 +1,40 @@
+﻿<Page x:Class="ТРПО4.Pages.DobNas"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ТРПО4.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="DobNas">
+
+    <Grid Background="#ebc3dd">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Название" Grid.Row="0" Grid.Column="0" Margin="10,0,0,0"/>
+        <TextBlock Text="Вид населенного пункта" Grid.Row="1" Grid.Column="0" Margin="10,0,0,0"/>
+        <TextBlock Text="Область" Grid.Row="2" Grid.Column="0" Margin="10,0,0,0"/>
+
+        <!--<ComboBox Name="CmbCat" DisplayMemberPath="Category" Grid.Row="0" Grid.Column="1"/>-->
+        <TextBox Grid.Row="1" Grid.Column="1"/>
+        <TextBox Grid.Row="2" Grid.Column="1"/>
+
+
+        <Button Name="ButtonSave" Content="Сохранить" Grid.Row="7" Click="ButtonSave_OnClick" Margin="0,0.4,0,-0.4"  Background="#d49fc2 "/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="55" TextWrapping="Wrap" VerticalAlignment="Top" Width="600"/>
+
+
+    </Grid>
+</Page>

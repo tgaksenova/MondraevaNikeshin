@@ -16,20 +16,19 @@ using System.Windows.Shapes;
 namespace ТРПО4.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для abiturient.xaml
+    /// Логика взаимодействия для Nas_pynkt.xaml
     /// </summary>
-    public partial class abiturient : Page
+    public partial class Nas_pynkt : Page
     {
-        public abiturient()
+        public Nas_pynkt()
         {
             InitializeComponent();
-
-            DataGridCar.ItemsSource = Entities.GetContext().Abiturient.ToList();
+            DataGridCar.ItemsSource = Entities.GetContext().Nas_pynkt2.ToList();
         }
 
         private void ButtonAdd_OnClick(object sender, RoutedEventArgs e)
         {
-
+            NavigationService?.Navigate(new DobNas());
         }
 
         private void ButtonDel_OnClick(object sender, RoutedEventArgs e)
@@ -42,10 +41,7 @@ namespace ТРПО4.Pages
         }
         private void DataGridCar_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            
+
         }
-
-
-      
     }
 }

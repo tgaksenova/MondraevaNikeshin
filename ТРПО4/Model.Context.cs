@@ -15,17 +15,19 @@ namespace ТРПО4
     
     public partial class Entities : DbContext
     {
-        private static Entities _context;
         public Entities()
             : base("name=Entities")
         {
         }
+        private static Entities _context;
         public static Entities GetContext()
         {
             if (_context == null)
                 _context = new Entities();
             return _context;
         }
+
+
 
 
 

@@ -31,7 +31,7 @@
         <TextBox x:Name="textBoxFIO" Height="25" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Margin="40,90,3,0" Grid.ColumnSpan="2"/>
         <Label Content="Выберите роль:" Grid.Row="1" VerticalAlignment="Top" Height="25" Margin="40,125,3,0" Grid.ColumnSpan="2"/>
         <ComboBox Name="role" SelectedIndex="1" Height="30" Grid.Row="1" Margin="40,150,3,0" VerticalAlignment="Top" Grid.ColumnSpan="2">
-            <TextBlock>Абитуриент</TextBlock>
+            <TextBlock>Член комиссии</TextBlock>
             <TextBlock>Амин</TextBlock>
         </ComboBox>
         <Button Click="reg_click" Content="Зарегистрироваться" Grid.Column="2" Margin="7,145,0,0" Grid.Row="1" VerticalAlignment="Top" Height="30" Width="185" HorizontalAlignment="Left"/>

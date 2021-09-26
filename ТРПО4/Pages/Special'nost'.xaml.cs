@@ -16,15 +16,14 @@ using System.Windows.Shapes;
 namespace ТРПО4.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для abiturient.xaml
+    /// Логика взаимодействия для Special_nost_.xaml
     /// </summary>
-    public partial class abiturient : Page
+    public partial class Special_nost_ : Page
     {
-        public abiturient()
+        public Special_nost_()
         {
             InitializeComponent();
-
-            DataGridCar.ItemsSource = Entities.GetContext().Abiturient.ToList();
+            DataGridCar.ItemsSource = Entities.GetContext().Specil_nost_2.ToList();
         }
 
         private void ButtonAdd_OnClick(object sender, RoutedEventArgs e)
@@ -42,10 +41,7 @@ namespace ТРПО4.Pages
         }
         private void DataGridCar_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            
+
         }
-
-
-      
     }
 }
