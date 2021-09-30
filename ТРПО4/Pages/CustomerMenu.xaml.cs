@@ -26,7 +26,7 @@ namespace ТРПО4.Pages
         }
         private void Переход_1_OnClick(object sender, RoutedEventArgs e)
         {
-            NavigationService?.Navigate(new abiturient());
+           NavigationService?.Navigate(new Nationality());
         }
 
         private void Переход_2_OnClick(object sender, RoutedEventArgs e)

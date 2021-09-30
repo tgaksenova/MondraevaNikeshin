@@ -10,14 +10,14 @@
 
     <Grid  Background="#ebc3dd">
         <Grid.RowDefinitions>
-            <RowDefinition Height="377*"/>
-            <RowDefinition Height="73*"/>
+            <RowDefinition Height="13*"/>
+            <RowDefinition Height="5*"/>
         </Grid.RowDefinitions>
-        <DataGrid Grid.Row="0" Name="DataGridCar" AutoGenerateColumns="False" IsReadOnly="True" Margin="0,10,0,69.6" SelectionChanged="DataGridCar_SelectionChanged" Grid.RowSpan="2">
+        <DataGrid Grid.Row="0" Name="DataGridCar" AutoGenerateColumns="False" IsReadOnly="True" Margin="0,10,0,87.8" SelectionChanged="DataGridCar_SelectionChanged">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Название" Binding="{Binding Naimenovanie}" Width="60"/>
-                <DataGridTextColumn Header="Вид населенного пункта" Binding="{Binding  Vid_nas_pynkta}" Width="35"/>
-                <DataGridTextColumn Header="Область"  Binding="{Binding Oblast_2.Naimenovanie}" Width="35"/>
+                <DataGridTextColumn Header="Название" Binding="{Binding Naimenovanie}" Width="80"/>
+                <DataGridTextColumn Header="Вид населенного пункта" Binding="{Binding  Vid_nas_pynkta}" Width="150"/>
+                <DataGridTextColumn Header="Область"  Binding="{Binding Oblast_2.Naimenovanie}" Width="95"/>
 
                 <DataGridTemplateColumn Width="*">
                     <DataGridTemplateColumn.CellTemplate>
@@ -28,9 +28,8 @@
                 </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <Button Grid.Row="1" Name="ButtonAdd" Content="Добавить" HorizontalAlignment="Left" Click="ButtonAdd_OnClick" Margin="0,0.2,0,0" Width="110" Background="#d49fc2 " Height="33" VerticalAlignment="Top"/>
-        <Button Grid.Row="1" Name="ButtonDel" Content="Удалить" Click="ButtonDel_OnClick" Margin="655,0.2,5,0" RenderTransformOrigin="0.501,0.501" Background="#d49fc2 " Height="33" VerticalAlignment="Top"/>
-
+        <Button Grid.Row="1" Name="ButtonAdd" Content="Добавить" HorizontalAlignment="Left" Click="ButtonAdd_OnClick" Margin="0,0.2,0,49.6" Width="160"/>
+        <Button Grid.Row="1" Name="ButtonDel" Content="Удалить" HorizontalAlignment="Right" Click="ButtonDel_OnClick" Margin="0,0.2,0,49.6" Width="160"/>
 
     </Grid>
 </Page>

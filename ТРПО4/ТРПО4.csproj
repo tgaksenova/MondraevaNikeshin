@@ -91,9 +91,6 @@
     <Compile Include="Oblast_2.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
-    <Compile Include="Pages\abiturient.xaml.cs">
-      <DependentUpon>abiturient.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Pages\AuthPage.xaml.cs">
       <DependentUpon>AuthPage.xaml</DependentUpon>
     </Compile>
@@ -106,8 +103,17 @@
     <Compile Include="Pages\DobNas.xaml.cs">
       <DependentUpon>DobNas.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\DobNati.xaml.cs">
+      <DependentUpon>DobNati.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DobSpec.xaml.cs">
+      <DependentUpon>DobSpec.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Nas_pynkt.xaml.cs">
       <DependentUpon>Nas_pynkt.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Nationality.xaml.cs">
+      <DependentUpon>Nationality.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\Page2.xaml.cs">
       <DependentUpon>Page2.xaml</DependentUpon>
@@ -147,10 +153,6 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Pages\abiturient.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Pages\AuthPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -167,7 +169,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\DobNati.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\DobSpec.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\Nas_pynkt.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Nationality.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

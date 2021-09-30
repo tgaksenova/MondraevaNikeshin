@@ -28,20 +28,20 @@ namespace ТРПО4.Pages
 
         private void ButtonAdd_OnClick(object sender, RoutedEventArgs e)
         {
-
+            NavigationService?.Navigate(new DobSpec());
         }
 
         private void ButtonDel_OnClick(object sender, RoutedEventArgs e)
         {
 
         }
-        private void ButtonEdit_OnClick(object sender, RoutedEventArgs e)
-        {
 
-        }
-        private void DataGridCar_SelectionChanged(object sender, SelectionChangedEventArgs e)
+          private void ButtonEdit_OnClick(object sender, RoutedEventArgs e)
         {
 
         }
     }
-}
+
+       
+    }
+

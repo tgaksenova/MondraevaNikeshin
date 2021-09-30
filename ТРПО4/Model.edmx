@@ -124,18 +124,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_Abiturient_Specil'nost'2">
-          <End Role="Specilnost2" Type="Self.Specilnost2" Multiplicity="0..1" />
-          <End Role="Abiturient" Type="Self.Abiturient" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Specilnost2">
-              <PropertyRef Name="ID" />
-            </Principal>
-            <Dependent Role="Abiturient">
-              <PropertyRef Name="ID_Specilnoct2" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_Abiturient_Ylitsa2">
           <End Role="Ylitsa2" Type="Self.Ylitsa2" Multiplicity="0..1" />
           <End Role="Abiturient" Type="Self.Abiturient" Multiplicity="*" />
@@ -190,10 +178,6 @@
             <End Role="Abiturient" EntitySet="Abiturient" />
           </AssociationSet>
           <AssociationSet Name="FK_Abiturient_Specilnost2" Association="Self.FK_Abiturient_Specilnost2">
-            <End Role="Specilnost2" EntitySet="Specilnost2" />
-            <End Role="Abiturient" EntitySet="Abiturient" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Abiturient_Specil'nost'2" Association="Self.FK_Abiturient_Specil'nost'2">
             <End Role="Specilnost2" EntitySet="Specilnost2" />
             <End Role="Abiturient" EntitySet="Abiturient" />
           </AssociationSet>
