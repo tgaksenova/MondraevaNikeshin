@@ -34,12 +34,12 @@ namespace ТРПО4
         public Nullable<int> Nomer_Zayavleniya { get; set; }
         public Nullable<int> ID_Nationality2 { get; set; }
         public Nullable<int> ID_Shkola2 { get; set; }
-        public Nullable<int> ID_Specil_noct_2 { get; set; }
+        public Nullable<int> ID_Specilnoct2 { get; set; }
         public Nullable<int> ID_Ylitsa2 { get; set; }
     
         public virtual Nationality2 Nationality2 { get; set; }
         public virtual Shkola2 Shkola2 { get; set; }
-        public virtual Specil_nost_2 Specil_nost_2 { get; set; }
+        public virtual Specilnost2 Specilnost2 { get; set; }
         public virtual Ylitsa2 Ylitsa2 { get; set; }
     }
 }

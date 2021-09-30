@@ -23,7 +23,7 @@ namespace ТРПО4.Pages
         public Special_nost_()
         {
             InitializeComponent();
-            DataGridCar.ItemsSource = Entities.GetContext().Specil_nost_2.ToList();
+            DataGridCar.ItemsSource =  Entities.GetContext().Specilnost2.ToList();
         }
 
         private void ButtonAdd_OnClick(object sender, RoutedEventArgs e)

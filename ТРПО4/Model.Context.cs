@@ -19,6 +19,7 @@ namespace ТРПО4
             : base("name=Entities")
         {
         }
+
         private static Entities _context;
         public static Entities GetContext()
         {
@@ -26,8 +27,6 @@ namespace ТРПО4
                 _context = new Entities();
             return _context;
         }
-
-
 
 
 
@@ -41,8 +40,7 @@ namespace ТРПО4
         public virtual DbSet<Nationality2> Nationality2 { get; set; }
         public virtual DbSet<Oblast_2> Oblast_2 { get; set; }
         public virtual DbSet<Shkola2> Shkola2 { get; set; }
-        public virtual DbSet<Specil_nost_2> Specil_nost_2 { get; set; }
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
+        public virtual DbSet<Specilnost2> Specilnost2 { get; set; }
         public virtual DbSet<User> User { get; set; }
         public virtual DbSet<Ylitsa2> Ylitsa2 { get; set; }
     }

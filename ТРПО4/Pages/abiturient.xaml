@@ -34,7 +34,7 @@
                 <DataGridTextColumn Header="Номер заявления" Binding="{Binding Data_zayavleniya}" Width="60"/>
                 <DataGridTextColumn Header="Национальность" Binding="{Binding Nationality2.Naimenovanie}" Width="60"/>
                 <DataGridTextColumn Header="Школа" Binding="{Binding  Shkola2.Naimenovanie}" Width="35"/>
-                <DataGridTextColumn Header="Специальность"  Binding="{Binding Specil_noct_2.Naimenovanie}" Width="35"/>
+                <DataGridTextColumn Header="Специальность"  Binding="{Binding Specilnoct2.Naimenovanie}" Width="35"/>
                 <DataGridTextColumn Header="Улица" Binding="{Binding   Ylitsa2.Naimenovanie}" Width="35"/>
                 <DataGridTemplateColumn Width="*">
                     <DataGridTemplateColumn.CellTemplate>
