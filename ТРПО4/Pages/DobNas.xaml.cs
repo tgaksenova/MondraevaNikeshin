@@ -20,17 +20,52 @@ namespace ТРПО4.Pages
     /// </summary>
     public partial class DobNas : Page
     {
-        public DobNas()
+        private Nas_pynkt2 _currentCar = new Nas_pynkt2();
+        public DobNas(Nas_pynkt2 selectedCar)
         {
             InitializeComponent();
-            //CmbCat.ItemsSource = Entities.GetContext().Nas_pynkt2.ToList();
 
+            DataContext = _currentCar;
+
+            if (selectedCar != null)
+                _currentCar = selectedCar;
+
+            DataContext = _currentCar;
+
+            CmbCat.ItemsSource = Entities.GetContext().Oblast_2.ToList();
 
         }
 
         private void ButtonSave_OnClick(object sender, RoutedEventArgs e)
         {
+            StringBuilder errors = new StringBuilder();
+            if (string.IsNullOrWhiteSpace(_currentCar.Naimenovanie))
+                errors.AppendLine("ВВедите название города!");
+            if (string.IsNullOrWhiteSpace(_currentCar.Vid_nas_pynkta))
+                errors.AppendLine("Укажите название населенного пункта!");
+            if (string.IsNullOrWhiteSpace(_currentCar.Naimenovanie))
+                errors.AppendLine("Укажите название области!");
 
+            if (errors.Length > 0)
+            {
+                MessageBox.Show(errors.ToString());
+                return;
+            }
+
+
+
+            if (_currentCar.ID == 0)
+                Entities.GetContext().Nas_pynkt2.Add(_currentCar);
+
+            try
+            {
+                Entities.GetContext().SaveChanges();
+                MessageBox.Show("Данные успешно сохранены!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+            }
         }
     }
 }

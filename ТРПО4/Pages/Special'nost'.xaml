@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:ТРПО4.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Special_nost_">
+      Title="Special_nost_"  IsVisibleChanged="Nationality_IsVisibleChanged" >
 
     <Grid  Background="#ebc3dd">
         <Grid.RowDefinitions>
@@ -26,7 +26,7 @@
                 </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <Button Name="ButtonAdd" Content="Добавить" HorizontalAlignment="Left" Click="ButtonAdd_OnClick" Margin="-5,14.8,0,74.6" Width="150" Grid.Row="1"/>
+        <Button Name="ButtonAdd" Content="Добавить" HorizontalAlignment="Left" Click="ButtonAdd_OnClick" Margin="5,14.8,0,74.6" Width="150" Grid.Row="1"/>
         <Button Name="ButtonDel" Content="Удалить" HorizontalAlignment="Right" Click="ButtonDel_OnClick" Margin="0,14.8,0,79.6" Width="150" Grid.Row="1"/>
 
     </Grid>

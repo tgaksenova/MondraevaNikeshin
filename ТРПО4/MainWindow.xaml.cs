@@ -55,6 +55,11 @@ namespace ТРПО4
         private void ButtonBack_OnClick(object sender, RoutedEventArgs e)
         {
             if (MainFrame.CanGoBack) MainFrame.GoBack();
+
+
+         
+
+
         }
 
         private void КалькуляторButton_OnClick(object sender, RoutedEventArgs e)

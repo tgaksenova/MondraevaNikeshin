@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:ТРПО4.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Nas_pynkt">
+      Title="Nas_pynkt"  IsVisibleChanged="Nationality_IsVisibleChanged">
 
     <Grid  Background="#ebc3dd">
         <Grid.RowDefinitions>

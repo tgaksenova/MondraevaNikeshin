@@ -19,14 +19,55 @@ namespace ТРПО4.Pages
     /// Логика взаимодействия для DobNati.xaml
     /// </summary>
     public partial class DobNati : Page
-    {
-        public DobNati()
+    { 
+
+        private  Nationality2 _currentCar = new Nationality2();
+
+     
+        public DobNati( Nationality2 selectedCar)
         {
             InitializeComponent();
+
+            DataContext = _currentCar;
+
+            if ( selectedCar != null)
+                _currentCar = selectedCar;
+
+            DataContext = _currentCar;
+
+
         }
+
 
         private void ButtonSave_OnClick(object sender, RoutedEventArgs e)
         {
+            StringBuilder errors = new StringBuilder();
+            if (string.IsNullOrWhiteSpace(_currentCar.Naimenovanie))
+                errors.AppendLine("ВВедите название национальности!");
+
+
+
+
+            if (errors.Length > 0)
+            {
+                MessageBox.Show(errors.ToString());
+                return;
+            }
+
+
+
+            if (_currentCar.ID == 0)
+                Entities.GetContext().Nationality2.Add(_currentCar);
+
+            try
+            {
+                Entities.GetContext().SaveChanges();
+                MessageBox.Show("Данные успешно сохранены!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+            }
 
         }
     }
