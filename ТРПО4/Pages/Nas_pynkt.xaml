@@ -17,7 +17,7 @@
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Название" Binding="{Binding Naimenovanie}" Width="80"/>
                 <DataGridTextColumn Header="Вид населенного пункта" Binding="{Binding  Vid_nas_pynkta}" Width="150"/>
-                <DataGridTextColumn Header="Область"  Binding="{Binding Oblast_2.Naimenovanie}" Width="95"/>
+                <DataGridTextColumn  x:Name="rrr" Header="Область"  Binding="{Binding Oblast_2.Naimenovanie}" Width="95"/>
 
                 <DataGridTemplateColumn Width="*">
                     <DataGridTemplateColumn.CellTemplate>

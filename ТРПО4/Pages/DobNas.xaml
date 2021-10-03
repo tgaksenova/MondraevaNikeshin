@@ -30,7 +30,7 @@
 
         <TextBox  Text="{Binding Naimenovanie}"  Grid.Column="1" Margin="0,0,0,56.6" Grid.RowSpan="2"/>
         <TextBox  Text="{Binding  Vid_nas_pynkta}" Grid.Row="1" Grid.Column="1" Margin="0,2.2,0,54.6" Grid.RowSpan="2"/>
-        <ComboBox Name="CmbCat"   DisplayMemberPath="Naimenovanie" Margin="0,1.4,0,54.6" Grid.Row="2" Grid.RowSpan="2" Grid.Column="1"/>
+        <ComboBox Name="CmbCat" SelectedItem="{Binding Oblast_2}"   DisplayMemberPath="Naimenovanie" Margin="0,1.4,0,54.6" Grid.Row="2" Grid.RowSpan="2" Grid.Column="1"/>
 
 
 

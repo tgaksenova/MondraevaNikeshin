@@ -21,17 +21,15 @@ namespace ТРПО4.Pages
     public partial class DobNas : Page
     {
         private Nas_pynkt2 _currentCar = new Nas_pynkt2();
+
         public DobNas(Nas_pynkt2 selectedCar)
         {
             InitializeComponent();
 
-            DataContext = _currentCar;
 
             if (selectedCar != null)
                 _currentCar = selectedCar;
-
             DataContext = _currentCar;
-
             CmbCat.ItemsSource = Entities.GetContext().Oblast_2.ToList();
 
         }
@@ -43,7 +41,7 @@ namespace ТРПО4.Pages
                 errors.AppendLine("ВВедите название города!");
             if (string.IsNullOrWhiteSpace(_currentCar.Vid_nas_pynkta))
                 errors.AppendLine("Укажите название населенного пункта!");
-            if (string.IsNullOrWhiteSpace(_currentCar.Naimenovanie))
+            if ( _currentCar.Oblast_2 == null)
                 errors.AppendLine("Укажите название области!");
 
             if (errors.Length > 0)
@@ -55,7 +53,12 @@ namespace ТРПО4.Pages
 
 
             if (_currentCar.ID == 0)
+            {
                 Entities.GetContext().Nas_pynkt2.Add(_currentCar);
+         
+
+            }
+            
 
             try
             {
@@ -66,6 +69,11 @@ namespace ТРПО4.Pages
             {
                 MessageBox.Show(ex.Message.ToString());
             }
+        }
+
+        private void CmbCat_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }
