@@ -29,7 +29,7 @@
             </DataGrid.Columns>
         </DataGrid>
         <Button Grid.Row="1" Name="ButtonAdd" Content="Добавить" HorizontalAlignment="Left" Click="ButtonAdd_OnClick" Margin="0,0.2,0,49.6" Width="160"/>
-        <Button Grid.Row="1" Name="ButtonDel" Content="Удалить" HorizontalAlignment="Right" Click="ButtonDel_OnClick" Margin="0,0.2,0,49.6" Width="160"/>
+        <Button Grid.Row="1" Name="ButtonDel" Content="Удалить" HorizontalAlignment="Right" Click="ButtonDel_OnClick" Margin="0,0,10,50" Width="160"/>
 
     </Grid>
 </Page>
