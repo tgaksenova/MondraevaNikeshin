@@ -24,6 +24,7 @@ namespace ТРПО4
         public string Naimenovanie { get; set; }
         public string Vid_nas_pynkta { get; set; }
         public Nullable<int> ID_Oblast_2 { get; set; }
+        public string Foto { get; set; }
     
         public virtual Oblast_2 Oblast_2 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

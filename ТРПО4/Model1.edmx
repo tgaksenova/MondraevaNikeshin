@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="Хранилище Model" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="Хранилище Model" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Abiturient">
           <Key>
             <PropertyRef Name="ID" />
@@ -40,6 +40,7 @@
           <Property Name="Naimenovanie" Type="varchar" MaxLength="50" />
           <Property Name="Vid_nas_pynkta" Type="varchar" MaxLength="50" />
           <Property Name="ID_Oblast'2" Type="int" />
+          <Property Name="Foto" Type="varchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="Nationality2">
           <Key>
@@ -195,8 +196,7 @@
             <End Role="Ylitsa2" EntitySet="Ylitsa2" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -241,6 +241,7 @@
           <Property Name="ID_Oblast_2" Type="Int32" />
           <NavigationProperty Name="Oblast_2" Relationship="Self.FK_Nas_pynkt2_Oblast_2" FromRole="Nas_pynkt2" ToRole="Oblast_2" />
           <NavigationProperty Name="Ylitsa2" Relationship="Self.FK_Ylitsa2_Nas_pynkt2" FromRole="Nas_pynkt2" ToRole="Ylitsa2" />
+          <Property Name="Foto" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="Nationality2">
           <Key>
@@ -439,6 +440,7 @@
           <EntitySetMapping Name="Nas_pynkt2">
             <EntityTypeMapping TypeName="Model.Nas_pynkt2">
               <MappingFragment StoreEntitySet="Nas_pynkt2">
+                <ScalarProperty Name="Foto" ColumnName="Foto" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Naimenovanie" ColumnName="Naimenovanie" />
                 <ScalarProperty Name="Vid_nas_pynkta" ColumnName="Vid_nas_pynkta" />

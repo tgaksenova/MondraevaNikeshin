@@ -109,6 +109,9 @@
     <Compile Include="Pages\DobSpec.xaml.cs">
       <DependentUpon>DobSpec.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\NasPage.xaml.cs">
+      <DependentUpon>NasPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Nas_pynkt.xaml.cs">
       <DependentUpon>Nas_pynkt.xaml</DependentUpon>
     </Compile>
@@ -180,6 +183,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\DobSpec.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\NasPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -256,6 +263,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Resource Include="Resources\DSC01551.JPG" />
     <Resource Include="Resources\7wkh7HekKIk.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

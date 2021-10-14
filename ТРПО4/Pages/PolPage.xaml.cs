@@ -26,6 +26,8 @@ namespace ТРПО4.Pages
 
             var currentUsers = Entities.GetContext().User.ToList();
             ListUser.ItemsSource = currentUsers;
+        
+
         }
     }
 }

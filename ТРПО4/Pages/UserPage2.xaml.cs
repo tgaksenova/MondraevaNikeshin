@@ -32,7 +32,7 @@ namespace ТРПО4.Pages
 
         private void Переход_2_OnClick(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new Pages.NasPage());
         }
     }
 }
