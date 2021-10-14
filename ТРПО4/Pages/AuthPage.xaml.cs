@@ -61,11 +61,9 @@ namespace ТРПО4.Pages
                         NavigationService?.Navigate(new CustomerMenu());
                         break;
                     case "Член комиссии":
-                        NavigationService?.Navigate(new Menu());
+                        NavigationService?.Navigate(new UserPage2());
                         break;
                 }
-
-
             }
         }
 

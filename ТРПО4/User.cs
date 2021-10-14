@@ -19,5 +19,6 @@ namespace ТРПО4
         public string Password { get; set; }
         public string Role { get; set; }
         public string FIO { get; set; }
+        public string Foto { get; set; }
     }
 }
